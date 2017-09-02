@@ -115,7 +115,7 @@ a.svg:after {
 nav {
 		min-width: 100%;/*assures all nav elements stretch full width*/
 		position: absolute; /*positions relative to <body>*/
-		z-index: 2; /*places above content*/
+		z-index: 10; /*places above content*/
 }
 
 .navbar {
@@ -290,12 +290,25 @@ nav {
 
 .img-center {
 		position: absolute;
-		top: -9999px;
-		bottom: -9999px;
-		left: -9999px;
-		right: -9999px;
+			top: -9999px;
+			bottom: -9999px;
+			left: -9999px;
+			right: -9999px;
 		margin: auto;
 
+}
+
+object.slider {
+		/*specified SVG dimensions for cross-browser consistency*/
+		height: 118.142px;
+		margin: auto;
+		position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		width: 240px;
+		z-index: 3;
 }
 
 p.bodytext.introduction {
@@ -432,6 +445,14 @@ p.title {
 
 .slider.home-page {
 		
+}
+
+.slider.overlay {
+		background-color: rgba(0, 0, 0, 0.7);
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
 }
 
 .slider-img.img-center {

@@ -274,13 +274,17 @@ nav {
 
 .flex-grid.recent-news {
 		background-color: #fcfcfc;
-		flex: 1 100%;
+		/*flex: 1 100%;*/
 		padding: 24px;
+}
+
+.flex-grid.sidebar-container {
+		flex: 1 100%;
 }
 
 .flex-grid.upcoming-events {
 		background-color: #f3f1ee;
-		flex: 1 100%;
+		/*flex: 1 100%;*/
 		padding: 24px;
 }
 
@@ -519,8 +523,11 @@ p.title {
 			padding: 72px 48px;
 		}
 		.flex-grid.introduction {
-			flex: 1 100%;/*HERE!!!!!!*/
+			flex: 1 1 100%;/*HERE!!!!!!*/
 			padding: 96px 24px 96px 24px;
+		}
+		.flex-grid.sidebar-container {
+			display: flex;
 		}
 		.flex-grid.upcoming-events {
 			flex: 1 1 0;/*HERE!!!!!!*/
@@ -559,20 +566,27 @@ p.title {
 			margin: 0 auto;
 			max-width: 960px;
 		}
-		/*.flex-grid.home-page {
+		.flex-grid.home-page {
+			flex-flow: row nowrap;
 		}
 		.flex-grid.introduction {
 			flex: 2 0;
 			order: 1;
 		}
 		.flex-grid.recent-news {
-			flex: 1 0;
+			flex: 1 1 100%;
+			padding: 96px 48px 48px 48px;
+		}
+		.flex-grid.sidebar-container {
+			flex: 1 120px; /*120px somehow makes the sidebar
+				        *the exact size as determined in the mock-up*/
+			flex-flow: row wrap;
 			order: 2;
 		}
 		.flex-grid.upcoming-events {
-			flex: 1 0;
-			order: 3;
-		}*/
+			flex: 1 1 100%;
+			padding: 48px 48px 96px 48px;
+		}
 		.slider-img.img-center {
 			
 		}

@@ -613,6 +613,221 @@ p.title {
 		}
 }
 
+/* NEWS, EVENTS & UPDATES CONTENT
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.flex-grid.recent-news.neu {
+		background-color: #fcfcfc;
+		flex: 1 100%;
+		padding: 24px;
+}
+
+.flex-grid.upcoming-events.neu {
+		background-color: #fcfcfc;
+		flex: 1 100%;
+		padding: 24px;
+}
+
+.main.container {
+		background-color: #fcfcfc;
+}
+
+.page-number {
+		height: 48px;
+		text-align: center;
+		width: 48px;
+}
+.page-number.container {
+		border: 1px solid #e6e5e2;
+}
+
+.page-number p {
+		color: #6c6c6c;
+		font-family: 'Avenir-95';
+		font-size: 16px;
+		line-height: 48px;
+}
+
+.recent-news.content.neu {
+		display: block;
+}
+
+.recent-news.description {
+		color: #747474;
+		font-family: 'Avenir-45';
+		font-size: 14px;
+		line-height: 1.8;
+		padding: 24px;
+}
+
+.recent-news.heading-container {
+		border-bottom: 1px solid #e6e5e2;
+		padding: 24px;
+}
+
+.recent-news.post-container {
+		display: flex;
+		justify-content: space-between;
+}
+
+.recent-news.post-container a .newer-posts {
+		border: 1px solid #e6e5e2;
+		height: 48px;
+		text-align: center;
+		width: 96px;
+}
+
+.recent-news.post-container a .newer-posts p {
+		/*color: #6c6c6c;*/ /*Only when on neu 2+ pages*/
+		color: #e6e5e2;
+		font-family: 'Avenir-95';
+		font-size: 12px;
+		line-height: 48px;
+}
+
+.recent-news.post-container a .older-posts {
+		border: 1px solid #e6e5e2;
+		height: 48px;
+		text-align: center;
+		width: 96px;
+}
+
+.recent-news.post-container a .older-posts p {
+		color: #6c6c6c;
+		font-family: 'Avenir-95';
+		font-size: 12px;
+		line-height: 48px;
+}
+
+.recent-news.story.neu {
+		border: 1px solid #e6e5e2;
+		padding: 0;
+}
+
+.recent-news.title.neu {
+		border: 0;
+		margin-bottom: 24px;
+		padding: 0;
+}
+
+.upcoming-events.content.neu {
+		display: block;
+}
+
+.upcoming-events.title.neu {
+		border: 0;
+		margin-bottom: 24px;
+		padding: 0;
+}
+
+
+@media (min-width: 400px) {
+		.flex-grid.recent-news.neu {
+			padding: 72px 36px;
+		}
+		.flex-grid.upcoming-events.neu {
+			padding: 72px 36px;
+		}
+		.recent-news.story.neu {
+			margin-bottom: 36px;
+		}
+		.recent-news.title.neu {
+			margin-bottom: 36px;
+		}
+		.single-event.neu {
+			margin-bottom: 36px;
+		}
+		.upcoming-events.content.neu .single-event.neu:nth-of-type(2) {
+			margin-bottom: 0;
+		}
+		.upcoming-events.title.neu {
+			margin-bottom: 36px;
+		}
+}
+
+@media (min-width: 768px) {
+		.event-date.neu {
+			border-bottom: 1px solid #d8d8d8;
+			flex: 1 1 100%;
+			padding: 18px 0;
+		}
+		.event-date.neu p {
+			display: inline-block;
+		}
+		.event-date.neu p:nth-of-type(1) {
+			font-size: 16px;
+		}
+		.event-date.neu p:nth-of-type(2) {
+			font-size: 16px;
+		}
+		.event-location.neu {
+			border: 0;
+			flex: 1 1 100%;
+		}
+		.flex-grid.home-page.neu {
+			flex-flow: row nowrap;
+		}
+		.flex-grid.recent-news.neu {
+			flex: 2 0;/*HERE!!!!!!*/
+			padding: 72px 36px;
+		}
+		.flex-grid.upcoming-events.neu {
+			/*flex: 1 1 120px;*/
+			flex: 1 1 60px;
+			padding-top: 96px;
+		}
+		.setting-wrapper.neu {
+			flex-flow: row wrap;
+		}
+		.title.neu {
+			font-size: 40px;
+		}
+}
+
+@media (min-width: 1024px) {
+		.event-date.neu {
+			border-color: #e6e5e2;
+		}
+		.flex-grid.recent-news.neu {
+			/*flex: 1 1 100%;*/
+			padding: 96px 72px 96px 0;
+		}
+		.flex-grid.upcoming-events.neu {
+			padding: 96px 0 96px 72px;
+		}
+		.recent-news.story.neu {
+			margin-bottom: 48px;
+		}
+		.recent-news.title.neu {
+			margin-bottom: 48px;
+			text-align: left;
+		}
+		.single-event.neu {
+			border-color: #e6e5e2;
+		}
+		.setting-wrapper.neu {
+			border-color: #e6e5e2;
+		}
+		.title.neu {
+			font-size: 48px;
+		}
+		.upcoming-events.rsvp.neu {
+			border-color: #e6e5e2;
+		}
+		.upcoming-events.rsvp.neu a div {
+			background-color: #e6e5e2;
+		}
+		
+		/*HEY! YOU NEED TO ADD MORE FOR EACH OF THE 5 ACTIVE STATES*/
+		.upcoming-events.rsvp.neu a div:hover{
+			background-color: #a8a8a8;
+		}
+		
+		.upcoming-events.title.neu {
+			background-color: #fcfcfc;
+		}
+}
+
 /* FOOTER COMPONENT
      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
